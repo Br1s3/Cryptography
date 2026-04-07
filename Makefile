@@ -1,9 +1,9 @@
 CC = gcc
 RM = rm -rf
 
-NBO    = NB_OCTET=4
-PUIENC = PUI_ENCRYPT=4
-NBC    = NB_CLEF=100
+NBO    = NB_OCTET=2
+PUIENC = PUI_ENCRYPT=10
+NBC    = NB_CLEF=20
 # EPS    = EPSILON=0.75
 
 SPEFLAGS += 	\

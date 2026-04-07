@@ -8,19 +8,22 @@ This is a simple (or not) encryption and decryption programs
 $ make all
 ```
 
-## Best config:
+## Strongest configuration:
 
-- NB_OCTET   =2
-- PUI_ENCRYPT=2
+It is possible to increase _PUI\_ENCRYPT_, _NB\_CLEF_ but this number is complitely enought !
+
+- NB_OCTET   =4
+- PUI_ENCRYPT=10
 - NB_CLEF    =100
 
-## Wrong configuration
+
+## Worst configuration:
+
+The number of bytes it's not enought to differentiate all the ASCII carracter stored.
 
 - NB_OCTET   =1
 - PUI_ENCRYPT=2
 - NB_CLEF    =1
-
-The number of bytes it's not enought to differentiate all the ASCII carracter stored
 
   
 ## To accept a certain wrong bit
@@ -29,8 +32,7 @@ Set this value as you want:
 
 - EPSILON=0.75
 
-It's a ratio like SNR
-
+It's a ratio like SNR (Signal-to-Noise Ratio) to gets a certain tolerance on bytes errors received. 
 
 
 ## results of increasing NB_OCTET 
@@ -80,13 +82,13 @@ $ ./decrypt < code
 $ > ...
 ```
 
+
 ## To get it anywhere
 
 ```sh
 $ sudo cp encrypt /bin
 $ sudo cp decrypt /bin
 ```
-
 
 
 ## Limite and power
